@@ -1,0 +1,79 @@
+.owl-carousel .owl-item img{
+    height: 300px;
+    width: 100%;
+}
+.secondary img{
+    height:90px;
+    width: 100%;
+}
+.countdown{
+    direction: ltr;
+    padding: 0;
+}
+.countdown li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    margin: 0;
+    color: #c46179;
+    width: 24%;
+}
+
+.countdown li span {
+    border-radius: 5px;
+    display: block;
+    width: 50px;
+    color: #00bcd4;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    font-family: monaco, consolas, "courier new", monospace;
+}
+.media-list{
+    overflow-y: scroll;
+    height: 468px;
+    padding-left: 10px;
+}
+.media-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.media-list::-webkit-scrollbar-thumb {
+    background-color: #2196f3;
+}
+.media-list::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+.media-list .media{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .1875rem;
+    padding: 10px 15px;
+    border-right: 5px solid #00bcd4;
+}
+
+.fixed-height{
+    height: 614px;
+}
+
+.time-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+}
+.time-flex > div{
+    width: 150px;
+    font-size: 14px;
+}
+.time-flex ul{
+    margin-bottom: 0;
+}
