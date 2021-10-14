@@ -100,7 +100,9 @@ class ClientController extends Controller
         try {
             $user = User::whereMobile($request->mobile)->first();
             if ($user->is_active && $user->email_verified_at) {
-                return response()->json(['status' => 'false', 'message' => trans('app.messages.you_are_already_active'), 'data' => null], 401);
+                if ($request->verify_type != "flag") {
+                    return response()->json(['status' => 'false', 'message' => trans('app.messages.you_are_already_active'), 'data' => null], 401);
+                }
             }
             if ($request->code !=  $user->code) {
                 return response()->json(['status' => 'false', 'message' => trans('app.messages.wrong_code_please_try_again'), 'data' => null], 401);
