@@ -41,7 +41,7 @@ class PostResource extends JsonResource
             'mentions' => UserListResource::collection($this->mentions),
             'screen_shots' => auth('api')->check() ? (auth('api')->id() == $this->user_id ? UserListResource::collection($this->users_screen_shot) : []) : [],
             'comments_count' => $this->comments->count(),
-            'retweeted' => $this->retweet()->where('id', auth('api')->id())->count() ? true : false,
+            'retweeted' => $this->retweet()->where('user_id', auth('api')->id())->count() ? true : false,
         ];
     }
 }
