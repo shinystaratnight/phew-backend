@@ -6,15 +6,14 @@
 /storage/*.key
 /vendor
 .env
-laravel-echo-server.json
 .env.backup
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-laravel-echo-server.json
-laravel-echo-server.lock
+#laravel-echo-server.json
+#laravel-echo-server.lock
 
 .DS_Store
 /public/js
