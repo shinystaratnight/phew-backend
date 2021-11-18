@@ -1,3 +1,4 @@
+.DS_Store
 /.idea
 /.idea/workspace.xml
 /node_modules
@@ -14,7 +15,3 @@ npm-debug.log
 yarn-error.log
 #laravel-echo-server.json
 #laravel-echo-server.lock
-
-.DS_Store
-/public/js
-/public/mix-manifest.json
